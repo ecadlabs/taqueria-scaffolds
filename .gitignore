@@ -127,3 +127,4 @@ dist
 .pnp.*
 scaffolds/starter-backend-ligo/.DS_Store
 scaffolds/.DS_Store
+.DS_Store
