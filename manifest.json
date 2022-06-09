@@ -1,0 +1,71 @@
+{
+    "scaffolds": {
+        "ligo-dev": {
+            "name": "LIGO Development",
+            "type": "starter project",
+            "verified": true,
+            "author": "ECAD Labs",
+            "description": "A starter project for LIGO contract development, testing, and deployment",
+            "complexity": "easy",
+            "hasDapp": false,
+            "projectScope": "backend",
+            "plugins": [
+                "@taqueria/plugin-ligo",
+                "@taqueria/plugin-flextesa",
+                "@taqueria/plugin-taquito"
+            ],
+            "libraries": [
+                "@taqueria/state"
+            ]
+        },
+        "taco-shop": {
+            "name": "Taco Shop dApp",
+            "type": "starter project",
+            "verified": true,
+            "author": "ECAD Labs",
+            "description": "A simple fullstack starter project",
+            "complexity": "easy",
+            "hasDapp": true,
+            "projectScope": "fullstack",
+            "plugins": [
+                "ligo",
+                "flextesa",
+                "taquito"
+            ],
+            "libraries": [
+                "@taqueria/state"
+            ]
+        },
+        "increment-decrement": {
+            "name": "LIGO Development",
+            "type": "starter project",
+            "verified": true,
+            "author": "ECAD Labs",
+            "description": "A starter project for LIGO contract development, testing, and deployment",
+            "complexity": "simple",
+            "hasDapp": false,
+            "projectScope": "fullstack",
+            "plugins": [
+                "@taqueria/plugin-ligo",
+                "@taqueria/plugin-flextesa",
+                "@taqueria/plugin-taquito",
+                "@taqueria/plugin-contract-types"
+            ],
+            "libraries": [
+                "@taqueria/state"
+            ]
+        },
+        "hello-tacos-tutorial": {
+            "name": "Hello Tacos Tutorial",
+            "type": "tutorial",
+            "verified": true,
+            "author": "ECAD Labs",
+            "description": "The starter project for the Hello Tacos Tutorial",
+            "complexity": "easy",
+            "hasDapp": true,
+            "projectScope": "fullstack",
+            "plugins": [],
+            "libraries": []
+        }
+    }
+}
