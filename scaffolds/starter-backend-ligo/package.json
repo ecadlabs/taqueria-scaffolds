@@ -1,0 +1,21 @@
+{
+  "name": "taqueria-scaffold-ks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@taqueria/plugin-flextesa": "latest",
+    "@taqueria/plugin-ligo": "latest",
+    "@taqueria/plugin-taquito": "latest",
+    "@taqueria/plugin-tezos-client": "latest"
+  }
+}

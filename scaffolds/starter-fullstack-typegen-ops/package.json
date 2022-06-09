@@ -1,0 +1,15 @@
+{
+  "private": true,
+  "scripts": {
+    "setup": "npm run setup:taqueria && npm run setup:app",
+    "setup:taqueria": "cd ./taqueria && npm install && taq init",
+    "setup:app": "cd ./app && npm install",
+    "start": "npm run build:taqueria && npm run start:app",
+    "build:taqueria": "cd ./taqueria && npm run build",
+    "start:app": "cd ./app && npm run start",
+    "start:local": "npm run start:taqueria:local && npm run start:app",
+    "start:taqueria:local": "cd ./taqueria && npm run start:local",
+    "stop:local": "npm run stop:taqueria:local",
+    "stop:taqueria:local": "cd ./taqueria && npm run stop:local"
+  }
+}

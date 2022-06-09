@@ -125,3 +125,5 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+scaffolds/starter-backend-ligo/.DS_Store
+scaffolds/.DS_Store

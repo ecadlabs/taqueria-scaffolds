@@ -1,0 +1,49 @@
+{
+  "name": "app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@taquito/beacon-wallet": "^11.2.0",
+    "@taquito/taquito": "^11.2.0",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "@types/jest": "^26.0.15",
+    "@types/node": "^12.20.51",
+    "@types/react": "^17.0.45",
+    "@types/react-dom": "^17.0.17",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "typescript": "^4.6.4",
+    "web-vitals": "^1.0.1"
+  },
+  "scripts": {
+    "compile-contract": "ligo compile-contract ../contract/hello-tacos.mligo main",
+    "start-flextesa": "docker run --rm --name hangzhou-sandbox --detach -p 20000:20000 tqtezos/flextesa:20211119 hangzbox start",
+    "originate": "taq originate | tail -2 | head -1 | cut -d ' ' -f 4 | tee app/src/contract.txt && cp .taq/config.json app/src/",
+    "test": "jest ../tests/hello-tacos.test.js",
+    "ligo-test": "ligo run test ../contracts/hello-tacos-test.mligo",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
